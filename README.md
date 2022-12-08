@@ -1,8 +1,9 @@
-# tweetmarkmail
-
 ![license][license-shield]
 ![issues][issues-shield]
 ![forks][forks-shield]
+
+# tweetmarkmail
+
 Automation script to email Twitter bookmarks to user
 
 ## Usage
