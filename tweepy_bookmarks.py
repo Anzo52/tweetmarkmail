@@ -35,13 +35,15 @@ def email_bookmarks(bookmarks, email_address):
     # Create the message
     msg = MIMEMultipart()
     # Set the subject
-    msg['Subject'] = "Bookmarks from " + bookmarks[0].user.screen_name + " on " + str(datetime.datetime.now())
+    msg['Subject'] = f"Bookmarks from {bookmarks[0].user.screen_name} on {str(datetime.datetime.now())}"
+
     # Set the sender
     msg['From'] = credentials.EMAIL_ADDRESS
     # Set the recipient
     msg['To'] = email_address
     # Set the body
-    body = "Here are the bookmarks from " + bookmarks[0].user.screen_name + " on " + str(datetime.datetime.now()) + "\n\n"
+    body = f"Here are the bookmarks from {bookmarks[0].user.screen_name} on {str(datetime.datetime.now())}" + "\n\n"
+
     for bookmark in bookmarks:
         body += bookmark.url + "\n"
     msg.attach(MIMEText(body, 'plain'))
