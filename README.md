@@ -1,10 +1,8 @@
-# IN DEVELOPMENT
-
 ![license][license-shield]
 ![issues][issues-shield]
 ![forks][forks-shield]
 
-## tweetmarkmail
+# tweetmarkmail
 
 Automation script to email Twitter bookmarks to user
 
@@ -12,6 +10,9 @@ Automation script to email Twitter bookmarks to user
 
 NOTE: You'll need a twitter dev account and related API keys.
 [Click here to sign in/sign up][twitter-dev-link]
+
+## In development
+Currently working on command line interface using simple-term-menu
 
 <!--Links-->
 [license-shield]: https://img.shields.io/github/license/Anzo52/tweetmarkmail
